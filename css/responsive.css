@@ -166,6 +166,9 @@ Instead, 1rem = 1em = 16px */
   .main-nav-link:link, .main-nav-link:visited{
     font-size: 3.2rem;
   }
+  .testimonial-container{
+  padding-top: 4.8rem;
+}
 }
 
 
@@ -198,4 +201,62 @@ Instead, 1rem = 1em = 16px */
     grid-row: 1;
     grid-column: span 2;
   }
+  .testimonial-container{
+  padding-top: 4.8rem;
+}
+}
+/* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */
+
+/* Below 544px (Phones)/
+
+/* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */
+@media (max-width: 34em) {
+  .grid{
+    row-gap: 4.8rem;
+  }
+  
+  .grid--2-cols, .grid--3-cols, .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .section-hero{
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+.btn:link,
+.btn:visited {
+  padding: 2.4rem 1.6rem;
+}
+.section-hero{
+  padding: 2.4rem 0 6.4rem 0 ;
+}
+.hero{
+  padding: 0 3.2rem;
+}
+.hero-img{
+  width: 80%;
+}
+.logos img{
+  height: 1.2rem;
+}
+
+/* the reason why child 2 : the first of div element, div line 89 on HOW TO section is step-text-box as a first child and we start counting from the first child.*/
+.step-img-box:nth-child(2){
+  grid-row: 1;
+}
+.step-img-box:nth-child(6){
+  grid-row: 5;
+}
+.step-img-box{
+  transform: translateY(2.4rem);
+}
+.testimonials{
+  grid-template-columns: 1fr;
+}
+.testimonial-container{
+  padding-top: 3.2rem;
+}
 }
