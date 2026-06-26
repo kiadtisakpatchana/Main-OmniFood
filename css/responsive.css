@@ -259,4 +259,16 @@ Instead, 1rem = 1em = 16px */
 .testimonial-container{
   padding-top: 3.2rem;
 }
+.gallery{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.cta{
+  grid-template-columns: 1fr;
+}
+.cta-img-box{
+  height: 36rem;
+  grid-row: 1;
+}
 }
