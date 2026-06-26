@@ -47,9 +47,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #242323;
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */
@@ -122,6 +124,7 @@ html {
   /* the resons we define height because we want to position it's sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 /* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */

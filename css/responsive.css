@@ -116,7 +116,6 @@ Instead, 1rem = 1em = 16px */
   .main-nav{
     background-color: rgba(245, 245, 245, 0.95);
     position: absolute;
-    /* just absolute without relative with any parent */
     top: 0;
     left: 0;
     width: 100%;
@@ -188,5 +187,15 @@ Instead, 1rem = 1em = 16px */
   }
   .pricing-plan{
     width: 100%;
+  }
+  .grid--footer{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col, .address-col{
+    grid-column: span 3;
+  }
+  .nav-col{
+    grid-row: 1;
+    grid-column: span 2;
   }
 }
