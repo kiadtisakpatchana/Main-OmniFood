@@ -52,6 +52,17 @@ body {
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  /* Does not work on Safari, fix for all browswe on Javascript*/
+  scroll-behavior: smooth;
+}
+
+/* STICKY NAVIGATION */
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 /* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */
@@ -166,19 +177,19 @@ html {
   transition: background-color 0.3s;
 }
 /* MOBILE */
-.btn-mobile-nav{
- border: none;
- background: none;
- cursor: pointer;
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
 
- display: none;
+  display: none;
 }
 .icon-moblie-nav {
- height: 4.8rem;
- width: 4.8rem;
- color: #333;
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
 }
-.icon-moblie-nav[name="close-outline"]{
+.icon-moblie-nav[name="close-outline"] {
   display: none;
 }
 /* ‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗ */
